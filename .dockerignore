@@ -1,0 +1,11 @@
+.git
+.build
+.runtime
+output
+figures
+__pycache__
+*.pyc
+*.sqlite
+*.sqlite3
+*.npz
+!data/apm_shared_tudh_x2000000.npz

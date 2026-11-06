@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "canonicalization": "UTF-8 CSV rows with LF line endings; only the declared columns and rows are hashed",
+  "groups": {
+    "selected_prime_bundles": [
+      {
+        "figure": "apm_bundle_plus_over_cpx.pdf",
+        "csv_file": "figure-data/apm_bundle_plus_over_cpx.csv",
+        "rows": 31920,
+        "csv_file_sha256": "a6dd2fac77b0571e4f260e61e09ae7cfc9185dc4b611045927eb96fb869684a5",
+        "source": {
+          "kind": "selected_prime_family",
+          "directory": "csv/selected_primes",
+          "primes": [29, 101, 397, 797, 1597, 2593, 3989, 5987],
+          "step": 500,
+          "moving_average_window": 5000,
+          "raw_column": "plus_ratio",
+          "moving_average_column": "plus_ratio_ma"
+        }
+      },
+      {
+        "figure": "apm_bundle_minus_over_cpx.pdf",
+        "csv_file": "figure-data/apm_bundle_minus_over_cpx.csv",
+        "rows": 31920,
+        "csv_file_sha256": "91eaca862b50db4314e9954a21805465ca61d1f944bc53b6fc6dc90ce6eb01d3",
+        "source": {
+          "kind": "selected_prime_family",
+          "directory": "csv/selected_primes",
+          "primes": [29, 101, 397, 797, 1597, 2593, 3989, 5987],
+          "step": 500,
+          "moving_average_window": 5000,
+          "raw_column": "minus_ratio",
+          "moving_average_column": "minus_ratio_ma"
+        }
+      },
+      {
+        "figure": "apm_bundle_sum_over_cpx.pdf",
+        "csv_file": "figure-data/apm_bundle_sum_over_cpx.csv",
+        "rows": 31920,
+        "csv_file_sha256": "7bfdc952f9e04842866ac359ce1a9df7b4f14f056192cd1c7bc2fc14456f109d",
+        "source": {
+          "kind": "selected_prime_family",
+          "directory": "csv/selected_primes",
+          "primes": [29, 101, 397, 797, 1597, 2593, 3989, 5987],
+          "step": 500,
+          "moving_average_window": 5000,
+          "raw_column": "sum_ratio",
+          "moving_average_column": "sum_ratio_ma"
+        }
+      }
+    ],
+    "pairwise": [
+      {
+        "figure": "apm_experiments_split_ramified.png",
+        "csv_file": "figure-data/apm_experiments_split_ramified.csv",
+        "rows": 48963,
+        "csv_file_sha256": "0abc4ffdafa18b7dbf421b6bd1e5df178dadfdb9a1c6b31c051729bcf34241d1",
+        "source": {
+          "kind": "csv_projection",
+          "path": "cache/pairwise_primary_window_sample.csv",
+          "columns": ["x", "p", "eta", "scalar_ratio", "split_ratio", "ramified_ratio", "total_ratio", "denominator_cp"]
+        }
+      }
+    ],
+    "survivors": [
+      {
+        "figure": "apm_experiments_survivor_split_bin_mean_compare.png",
+        "csv_file": "figure-data/apm_experiments_survivor_split_bin_mean_compare.csv",
+        "rows": 48963,
+        "csv_file_sha256": "765edba58154a5084257f71d1d861d8ee3db6e74c264ab752a15abd5e16efbb5",
+        "source": {
+          "kind": "csv_projection",
+          "path": "summaries/apm_surviving_terms.csv",
+          "columns": ["x", "p", "eta", "split"]
+        }
+      },
+      {
+        "figure": "apm_experiments_survivor_ramified_zero_bin_mean_compare.png",
+        "csv_file": "figure-data/apm_experiments_survivor_ramified_zero_bin_mean_compare.csv",
+        "rows": 48963,
+        "csv_file_sha256": "22df8b0a7dd6f0bd80078ee1ed4609ef885929c53fd011c71a041336121037e6",
+        "source": {
+          "kind": "csv_projection",
+          "path": "summaries/apm_surviving_terms.csv",
+          "columns": ["x", "p", "eta", "ram0"]
+        }
+      },
+      {
+        "figure": "apm_experiments_survivor_scalar_zero_bin_mean_compare.png",
+        "csv_file": "figure-data/apm_experiments_survivor_scalar_zero_bin_mean_compare.csv",
+        "rows": 48963,
+        "csv_file_sha256": "ba291315d6295bdce50aeb3d5b31b47fc44b637161e9a385c8bfdf8e659b5b5d",
+        "source": {
+          "kind": "csv_projection",
+          "path": "summaries/apm_surviving_terms.csv",
+          "columns": ["x", "p", "eta", "scalar0"]
+        }
+      },
+      {
+        "figure": "apm_experiments_survivor_ramified_sigma_bin_mean_compare.png",
+        "csv_file": "figure-data/apm_experiments_survivor_ramified_sigma_bin_mean_compare.csv",
+        "rows": 48963,
+        "csv_file_sha256": "51069a792806a6e0d289ba69dadcff6160082702072ec95fe30e874255065b9f",
+        "source": {
+          "kind": "csv_projection",
+          "path": "summaries/apm_surviving_terms.csv",
+          "columns": ["x", "p", "eta", "ramsigma"]
+        }
+      },
+      {
+        "figure": "apm_experiments_survivor_scalar_sigma_bin_mean_compare.png",
+        "csv_file": "figure-data/apm_experiments_survivor_scalar_sigma_bin_mean_compare.csv",
+        "rows": 48963,
+        "csv_file_sha256": "19ddaf4bf314c1da3b2c2b6e1ecf56a4bb52a1222bdfec2edc10166d90f6c184",
+        "source": {
+          "kind": "csv_projection",
+          "path": "summaries/apm_surviving_terms.csv",
+          "columns": ["x", "p", "eta", "scalarsigma"]
+        }
+      }
+    ]
+  }
+}

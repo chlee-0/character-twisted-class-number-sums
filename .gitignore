@@ -1,0 +1,14 @@
+.build/
+data/
+output/
+results/
+__pycache__/
+*.pyc
+*.npz
+*.sqlite
+*.sqlite3
+!data/
+data/*
+!data/apm_shared_tudh_x2000000.npz
+!data/manifest.json
+.tmp/

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "canonical_input": "apm_shared_tudh_x2000000_v1",
+  "output_directory": "output/figures",
+  "parameters": {
+    "selected_prime_bundles": {
+      "xmax": 1000000,
+      "step": 500,
+      "moving_average_window": 5000,
+      "primes": [29, 101, 397, 797, 1597, 2593, 3989, 5987],
+      "normalization": "C_p*x*sqrt(p)",
+      "axis_config": "config/selected_prime_bundles.json"
+    },
+    "pairwise_and_survivors": {
+      "eta_window": [0.002, 0.006],
+      "x_window": [200000, 1000000],
+      "step": 5000
+    }
+  },
+  "artifacts": {
+    "selected_prime_bundles": {
+      "format": "pdf",
+      "files": {
+        "apm_bundle_plus_over_cpx.pdf": "dadb931f4e9ff5d13d6d0fdbad9ac537d4f86a996c5b21b0039640bcabf7e95f",
+        "apm_bundle_minus_over_cpx.pdf": "e429e1e1f622c998f74a85d4c30f80b107ab595e8445ee78604f8f88ffd40597",
+        "apm_bundle_sum_over_cpx.pdf": "662a8e007744a1329082f8de015b6e7a98865c784adb1b9e4f1c74653e1991b6"
+      }
+    },
+    "pairwise": {
+      "format": "png",
+      "files": {
+        "apm_experiments_split_ramified.png": "e7a74505a1e307cb0c00c4b873584ae6eb74f25615b20734cadfa3449f3d73ad"
+      }
+    },
+    "survivors": {
+      "format": "png",
+      "files": {
+        "apm_experiments_survivor_split_bin_mean_compare.png": "1ccd7614a54aa26caf9fac193bb1de5315b3bdb514da2ad2fb26e0001ec35611",
+        "apm_experiments_survivor_ramified_zero_bin_mean_compare.png": "de31a36d50c7f302f6d145e9abe83191b66e6e70b3ac9d213e75a276d1b4271b",
+        "apm_experiments_survivor_scalar_zero_bin_mean_compare.png": "cd81a1ba012b51a62f0f53b19c2388d3fd80bf8ee34c61f536e0138b74250a0a",
+        "apm_experiments_survivor_ramified_sigma_bin_mean_compare.png": "2c9c41e5d27a754626e550400233c955e0f51366069782493bdb62057d495bea",
+        "apm_experiments_survivor_scalar_sigma_bin_mean_compare.png": "7790bc034b748adb6f37b49ea64811e24194813b667eae8e725349b0c5851bbe"
+      }
+    }
+  }
+}

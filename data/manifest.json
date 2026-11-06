@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "inputs": [
+    {
+      "id": "apm_shared_tudh_x2000000_v1",
+      "path": "data/apm_shared_tudh_x2000000.npz",
+      "format": "numpy-npz",
+      "bytes": 32051265,
+      "sha256": "b2cab7e775b19419e15db034ea9180ef67cf0f20c88b721cd4e740f5be299bd4",
+      "arrays": {
+        "d": {"dtype": "int64", "shape": [4366961]},
+        "t": {"dtype": "int32", "shape": [4366961]},
+        "u": {"dtype": "int32", "shape": [4366961]},
+        "h": {"dtype": "int32", "shape": [4366961]}
+      },
+      "metadata": {
+        "row_count": 4366961,
+        "complete_up_to_eps": "2000000",
+        "enumerator": "trace-first",
+        "source_db": "/input.sqlite"
+      },
+      "invariants": {
+        "ordering": ["t", "d"],
+        "t_min": 3,
+        "t_max": 2000000
+      },
+      "provenance": {
+        "source_sqlite_bytes": 198086656,
+        "source_sqlite_sha256": "13ac91983a5f3cf8603f4e0054c27dbf77673e1279680271fcec5a52ba9e44ef",
+        "source_sqlite_tracked": false,
+        "note": "The source SQLite database is provenance only; it is not required to regenerate the declared artifacts from this canonical NPZ."
+      }
+    }
+  ]
+}
